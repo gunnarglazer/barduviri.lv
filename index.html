@@ -280,7 +280,7 @@
             <h2>Palūri video</h2>
             <p>Vēlāk būs vēl..</p>
         </header>
-        <div class="video-grid" style="display: flex; gap: 2em; justify-content: center; flex-wrap: wrap;">
+        <div class="video-grid" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
             <!-- Video 1 -->
             <div class="video-item" style="flex: 1 1 48%; max-width: 48%; box-sizing: border-box;">
                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.8);">
@@ -315,40 +315,58 @@
 
 <!-- Responsive CSS -->
 <style>
-    /* Adjust layout for mobile (max-width 768px) */
+    /* General styles */
+    .video-grid {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video-item {
+        flex: 1 1 48%;
+        max-width: 48%;
+        box-sizing: border-box;
+        margin-bottom: 2em;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Mobile adjustments (up to 768px) */
     @media (max-width: 768px) {
         .video-grid {
-            flex-direction: column; /* Stack videos vertically */
-            gap: 1em; /* Add a smaller gap for stacked videos */
+            flex-direction: column;
         }
 
         .video-item {
-            flex: 1 1 100%; /* Make sure video items take full width */
-            max-width: 100%; /* Ensure no restriction on width */
-            margin-bottom: 1em; /* Add margin between stacked videos */
+            flex: 1 1 100%;
+            max-width: 100%;
+            margin-bottom: 1em;
         }
 
         iframe {
-            width: 100% !important; /* Force iframe to be full-width */
-            height: auto !important; /* Maintain aspect ratio automatically */
+            width: 100% !important;
+            height: auto !important;
         }
     }
 
-    /* Adjust layout for smaller devices (max-width 480px) like iPhone 4 */
+    /* Small devices (up to 480px) like iPhone 4 */
     @media (max-width: 480px) {
         .video-item {
-            flex: 1 1 100%; /* Ensure full width for very small screens */
+            flex: 1 1 100%;
             max-width: 100%;
-            margin-bottom: 1em; /* Add margin between stacked items */
-        }
-
-        .container {
-            padding: 0 10px; /* Reduce padding for smaller screens */
+            margin-bottom: 1em;
         }
 
         iframe {
-            width: 100% !important; /* Ensure iframe stretches to full width */
-            height: auto !important; /* Maintain aspect ratio */
+            width: 100% !important;
+            height: auto !important;
         }
     }
 </style>
