@@ -275,94 +275,83 @@
 
 <!-- video section -->
 	
-<div class="w-full min-h-screen bg-white">
-  <div class="flex flex-col md:flex-row h-full">
-    <!-- Left Column -->
-    <div class="w-full md:w-1/2 min-h-screen p-2 md:p-4">
-      <div class="h-full flex flex-col gap-4">
-        <!-- First Video Section -->
-        <div class="flex-1">
-          <div class="relative w-full h-[calc(100vh-200px)]">
-            <video 
-              class="absolute inset-0 w-full h-full object-contain rounded-lg shadow-xl"
-              controls
-              preload="metadata"
-              aria-label="Šlāgerītis Promo video"
-            >
-              <source src="/api/placeholder/1920/1080" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="mt-4 px-2">
-            <h3 class="font-semibold text-2xl">Šlāgerītis Promo video</h3>
-            <p class="text-gray-600 text-lg">Vecie labie, estrādes klasika un lecamie gabali</p>
-          </div>
-        </div>
+<section class="wrapper style1 special fade-up">
+    <div class="container">
+        <header class="major">
+            <h2>Bārdu Vīru skaņdarbi</h2>
+            <p>Vecie labie, klasika un lecamie gabali mūsu izpildījumā</p>
+        </header>
+        
+        <div class="box alt">
+            <div class="row gtr-uniform">
+                <!-- First Video -->
+                <section class="col-6 col-12-medium">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em;">
+                        <video 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            controls
+                            preload="metadata"
+                        >
+                            <source src="shlageritis.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Šlāgerītis Promo video</h3>
+                    <p>Vecie labie, estrādes klasika un lecamie gabali</p>
+                </section>
 
-        <!-- Second Video Section -->
-        <div class="flex-1">
-          <div class="relative w-full h-[calc(100vh-200px)]">
-            <video 
-              class="absolute inset-0 w-full h-full object-contain rounded-lg shadow-xl"
-              controls
-              preload="metadata"
-              aria-label="Roka izlase Promo video"
-            >
-              <source src="/api/placeholder/1920/1080" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="mt-4 px-2">
-            <h3 class="font-semibold text-2xl">Roka izlase, Promo video</h3>
-            <p class="text-gray-600 text-lg">Roka gabali Bārdu Vīru sulā</p>
-          </div>
+                <!-- Second Video -->
+                <section class="col-6 col-12-medium">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em;">
+                        <video 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            controls
+                            preload="metadata"
+                        >
+                            <source src="roka.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Roka izlase, Promo video</h3>
+                    <p>Roka gabali Bārdu Vīru sulā</p>
+                </section>
+
+                <!-- Third Video (YouTube) -->
+                <section class="col-6 col-12-medium">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em;">
+                        <iframe 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            src="https://www.youtube.com/embed/u8vkkgbc44g"
+                            title="Rankas Blūzs"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <h3>Rankas Blūzs</h3>
+                    <p>Rankas Blūza performance</p>
+                </section>
+
+                <!-- Fourth Video (YouTube) -->
+                <section class="col-6 col-12-medium">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em;">
+                        <iframe 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            src="https://www.youtube.com/embed/nzN9cuadGJg"
+                            title="Meitene"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <h3>Meitene</h3>
+                    <p>Viens Līvu gabals</p>
+                </section>
+            </div>
         </div>
-      </div>
     </div>
-
-    <!-- Right Column -->
-    <div class="w-full md:w-1/2 min-h-screen p-2 md:p-4">
-      <div class="h-full flex flex-col gap-4">
-        <!-- Third Video Section -->
-        <div class="flex-1">
-          <div class="relative w-full h-[calc(100vh-200px)]">
-            <iframe 
-              class="absolute inset-0 w-full h-full rounded-lg shadow-xl"
-              src="https://www.youtube.com/embed/u8vkkgbc44g"
-              title="Rankas Blūzs"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="mt-4 px-2">
-            <h3 class="font-semibold text-2xl">Rankas Blūzs</h3>
-            <p class="text-gray-600 text-lg">Rankas Blūza performance</p>
-          </div>
-        </div>
-
-        <!-- Fourth Video Section -->
-        <div class="flex-1">
-          <div class="relative w-full h-[calc(100vh-200px)]">
-            <iframe 
-              class="absolute inset-0 w-full h-full rounded-lg shadow-xl"
-              src="https://www.youtube.com/embed/nzN9cuadGJg"
-              title="Meitene"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="mt-4 px-2">
-            <h3 class="font-semibold text-2xl">Meitene</h3>
-            <p class="text-gray-600 text-lg">Viens Līvu gabals</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+</section>
+								
 <!-- Bottom Divider -->
 <section class="wrapper style1 special fade-up" style="padding: 1em;">
     <div class="container">
