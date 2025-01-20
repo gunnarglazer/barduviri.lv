@@ -273,8 +273,6 @@
     </div>
 </section>
 
-
-
 <!-- Video Grid Section -->
 <section id="video-grid" class="wrapper style2 special fade" style="padding: 2em 0; background-color: black; color: white;">
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
@@ -317,16 +315,33 @@
 
 <!-- Responsive CSS -->
 <style>
-    /* Mobile view adjustments */
+    /* Adjust layout for mobile (max-width 768px) */
     @media (max-width: 768px) {
+        .video-grid {
+            flex-direction: column; /* Stack videos vertically */
+            gap: 1em; /* Add a smaller gap for stacked videos */
+        }
+        
         .video-item {
-            flex: 1 1 100%; /* Full width for mobile */
+            flex: 1 1 100%; /* Take full width on mobile */
             max-width: 100%;
+        }
+    }
+
+    /* Adjust layout for smaller devices (max-width 480px) like iPhone 4 */
+    @media (max-width: 480px) {
+        .video-item {
+            flex: 1 1 100%; /* Ensure full width for very small screens */
+            max-width: 100%;
+            margin-bottom: 1em; /* Add margin between stacked items */
+        }
+
+        .container {
+            padding: 0 10px; /* Reduce padding for smaller screens */
         }
     }
 </style>
 
-								
 
 <!-- Bottom Divider -->
 <section class="wrapper style1 special fade-up" style="padding: 1em;">
