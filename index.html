@@ -321,10 +321,16 @@
             flex-direction: column; /* Stack videos vertically */
             gap: 1em; /* Add a smaller gap for stacked videos */
         }
-        
+
         .video-item {
-            flex: 1 1 100%; /* Take full width on mobile */
-            max-width: 100%;
+            flex: 1 1 100%; /* Make sure video items take full width */
+            max-width: 100%; /* Ensure no restriction on width */
+            margin-bottom: 1em; /* Add margin between stacked videos */
+        }
+
+        iframe {
+            width: 100% !important; /* Force iframe to be full-width */
+            height: auto !important; /* Maintain aspect ratio automatically */
         }
     }
 
@@ -339,8 +345,14 @@
         .container {
             padding: 0 10px; /* Reduce padding for smaller screens */
         }
+
+        iframe {
+            width: 100% !important; /* Ensure iframe stretches to full width */
+            height: auto !important; /* Maintain aspect ratio */
+        }
     }
 </style>
+
 
 
 <!-- Bottom Divider -->
